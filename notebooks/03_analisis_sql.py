@@ -20,7 +20,7 @@ ORDER BY desempleo_2024 DESC
 LIMIT 5;
 """
 df1 = query(q1)
-print("\n📊 Top 5 ciudades con mayor desempleo (2024):")
+print("\n Top 5 ciudades con mayor desempleo (2024):")
 print(df1.to_string(index=False))
 
 # 2. Departamentos con mayor informalidad en 2024
@@ -31,7 +31,7 @@ ORDER BY informalidad_2024 DESC
 LIMIT 5;
 """
 df2 = query(q2)
-print("\n📊 Top 5 departamentos con mayor informalidad (2024):")
+print("\nTop 5 departamentos con mayor informalidad (2024):")
 print(df2.to_string(index=False))
 
 # 3. Departamentos que más redujeron informalidad (2022 vs 2024)
@@ -45,7 +45,7 @@ ORDER BY variacion ASC
 LIMIT 5;
 """
 df3 = query(q3)
-print("\n📊 Departamentos que más redujeron informalidad (2022-2024):")
+print("\n Departamentos que más redujeron informalidad (2022-2024):")
 print(df3.to_string(index=False))
 
 # 4. Correlación ingreso vs informalidad por departamento
@@ -70,7 +70,7 @@ ORDER BY "2023" DESC
 LIMIT 6;
 """
 df5 = query(q5)
-print("\n📊 Sectores con más empleo en Lima (2023, miles de personas):")
+print("\n Sectores con más empleo en Lima (2023, miles de personas):")
 print(df5.to_string(index=False))
 
-print("\n✅ Análisis completado")
+print("\n Análisis completado")

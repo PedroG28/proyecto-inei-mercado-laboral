@@ -139,6 +139,6 @@ df_combined["variacion_informalidad"] = (
 df_combined.to_csv(f"{CLEAN}/combinado_departamentos.csv", index=False, encoding="utf-8-sig")
 print(f"  {len(df_combined)} departamentos combinados")
 
-print("\n✅ Limpieza completada. Archivos en data/cleaned/:")
+print("\nLimpieza completada. Archivos en data/cleaned/:")
 for f in os.listdir(CLEAN):
     print(f"  - {f}")

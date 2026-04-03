@@ -18,6 +18,6 @@ tablas = {
 for tabla, ruta in tablas.items():
     df = pd.read_csv(ruta)
     df.to_sql(tabla, engine, if_exists="replace", index=False)
-    print(f"✅ Tabla '{tabla}' cargada — {len(df)} filas")
+    print(f" Tabla '{tabla}' cargada — {len(df)} filas")
 
-print("\n✅ Todas las tablas cargadas en PostgreSQL")
+print("\n Todas las tablas cargadas en PostgreSQL")
